@@ -7,7 +7,7 @@ express()
   .use(cors())
   .get('/health', (req, res) => res.json({ healthy: true }))
   .get('/users', (req, res) =>
-    res.json({ users: [{ name: 'Ahmed' }, { name: 'Ayoub' }] })
+    res.json({ users: [{ name: 'Ahmed' }, { name: 'Ayoub' }, { name: 'hussain' }] })
   )
   .listen(BE_PORT, () => {
     console.log(`http://localhost:${BE_PORT}`);
